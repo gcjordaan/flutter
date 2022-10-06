@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listfiveRowModel" type="com.gideonsapplication.app.modules.selectdateforconsultanttocontactyou.data.model.ListfiveRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearWeek"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtFive"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listfiveRowModel.txtFive}"
+            style="@style/txtRobotolight13_1" tools:text="@string/lbl_5"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSix"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_weight="0.11" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listfiveRowModel.txtSix}"
+            style="@style/txtRobotolight13_1" tools:text="@string/lbl_6"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSeven"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_weight="0.11" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listfiveRowModel.txtSeven}"
+            style="@style/txtRobotolight13_1" tools:text="@string/lbl_7"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtEight"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_weight="0.11" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listfiveRowModel.txtEight}"
+            style="@style/txtRobotolight13_1" tools:text="@string/lbl_8"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtNine"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_weight="0.11" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listfiveRowModel.txtNine}"
+            style="@style/txtRobotolight13_1" tools:text="@string/lbl_9"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTen"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_weight="0.21" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listfiveRowModel.txtTen}"
+            style="@style/txtRobotolight13_1" tools:text="@string/lbl_10"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtEleven"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_weight="0.21" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listfiveRowModel.txtEleven}"
+            style="@style/txtRobotolight13_1" tools:text="@string/lbl_11"/>
+    </LinearLayout>
+</layout>

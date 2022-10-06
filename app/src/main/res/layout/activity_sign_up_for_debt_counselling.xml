@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpForDebtCounsellingVM" type="com.gideonsapplication.app.modules.signupfordebtcounselling.data.viewmodel.SignUpForDebtCounsellingVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSignupfordeb"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_100">
+        <ImageView android:id="@+id/imageCroppedNBlogo"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_6pxh"
+            android:layout_marginEnd="@dimen/_117pxh"
+            android:layout_marginStart="@dimen/_117pxh"
+            android:layout_width="@dimen/_119pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_croppednblogo"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_croppednblogo"/>
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackconsolidationone"
+            android:layout_height="@dimen/_126pxv"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageConsolidationOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_126pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_consolidation1_5}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_consolidation1_5"/>
+            <FrameLayout android:id="@+id/frameStacklanguage"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_105pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearColumnlanguage"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8pxh"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylebluegray_100_a5">
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_14pxv"
+                        android:layout_marginEnd="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_60pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{signUpForDebtCounsellingVM.signUpForDebtCounsellingModel.txtLanguage}"
+                        style="@style/txtPoppinsregular13" tools:text="@string/msg_to_apply_for_de2"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSignUpForDebtCounselling"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_sign_up_for_deb"
+                    android:textAllCaps="false"
+                    style="@style/btnSolid_1" tools:text="@string/msg_sign_up_for_deb"/>
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtApplicantDetai"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_127pxh"
+            android:layout_marginStart="@dimen/_127pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{signUpForDebtCounsellingVM.signUpForDebtCounsellingModel.txtApplicantDetai}"
+            style="@style/txtPoppinssemibold13" tools:text="@string/msg_applicant_detai"/>
+        <View android:background="@color/black_900"
+            android:id="@+id/lineLineThree"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_30pxv" android:layout_width="@dimen/_297pxh"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumngroupeightyone"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <Spinner android:gravity="center_horizontal"
+                android:id="@+id/spinnerGroupEightyOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+            <Spinner android:gravity="center_horizontal"
+                android:id="@+id/spinnerGroupEightyThree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+            <Spinner android:gravity="center_horizontal"
+                android:id="@+id/spinnerGroupEightyFive"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+            <Spinner android:gravity="center_horizontal"
+                android:id="@+id/spinnerGroupEightySeven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+            <LinearLayout android:id="@+id/linearRowmonthlyincome"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMonthlyincome"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.42"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{signUpForDebtCounsellingVM.signUpForDebtCounsellingModel.txtMonthlyincome}"
+                    style="@style/txtPoppinsregular13_2" tools:text="@string/lbl_monthly_income"/>
+                <View
+                    android:background="@drawable/rectangle_bg_white_a700_radius_15"
+                    android:id="@+id/viewRectangleTwo"
+                    android:layout_height="@dimen/_30pxv"
+                    android:layout_marginStart="@dimen/_69pxh" android:layout_width="@dimen/_143pxh"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowmonthlyliving"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMonthlyliving"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.51"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{signUpForDebtCounsellingVM.signUpForDebtCounsellingModel.txtMonthlyliving}"
+                    style="@style/txtPoppinsregular13_2" tools:text="@string/msg_monthly_living"/>
+                <View
+                    android:background="@drawable/rectangle_bg_white_a700_radius_15"
+                    android:id="@+id/viewRectangleTwoOne"
+                    android:layout_height="@dimen/_30pxv"
+                    android:layout_marginStart="@dimen/_21pxh" android:layout_width="@dimen/_143pxh"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowlanguageOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguageOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.46"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{signUpForDebtCounsellingVM.signUpForDebtCounsellingModel.txtLanguageOne}"
+                    style="@style/txtPoppinsregular13_2" tools:text="@string/msg_total_debt_amou"/>
+                <View
+                    android:background="@drawable/rectangle_bg_white_a700_radius_15"
+                    android:id="@+id/viewRectangleTwoTwo"
+                    android:layout_height="@dimen/_30pxv"
+                    android:layout_marginStart="@dimen/_49pxh" android:layout_width="@dimen/_143pxh"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnProceedToUploadDocuments"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_25pxv"
+                android:paddingEnd="@dimen/_26pxh"
+                android:paddingStart="@dimen/_23pxh"
+                android:paddingTop="@dimen/_25pxv"
+                android:singleLine="true"
+                android:text="@string/msg_proceed_to_uplo"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_5" tools:text="@string/msg_proceed_to_uplo"/>
+            <FrameLayout android:id="@+id/frameStacknotsurewhich"
+                android:layout_height="@dimen/_33pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_265pxh">
+                <TextView android:gravity="top|center"
+                    android:id="@+id/txtNotsurewhich"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:text="@{signUpForDebtCounsellingVM.signUpForDebtCounsellingModel.txtNotsurewhich}"
+                    style="@style/txtPoppinsregular13" tools:text="@string/msg_not_sure_which"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtClickhere"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{signUpForDebtCounsellingVM.signUpForDebtCounsellingModel.txtClickhere}"
+                    style="@style/txtPoppinsregular13_1" tools:text="@string/lbl_click_here"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

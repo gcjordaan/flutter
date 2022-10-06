@@ -1,0 +1,37 @@
+package com.gideonsapplication.app.modules.debtcounsellingstatustwo.ui
+
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import androidx.activity.viewModels
+import com.gideonsapplication.app.R
+import com.gideonsapplication.app.appcomponents.base.BaseActivity
+import com.gideonsapplication.app.databinding.ActivityDebtCounsellingStatusTwoBinding
+import com.gideonsapplication.app.modules.debtcounsellingstatustwo.`data`.viewmodel.DebtCounsellingStatusTwoVM
+import kotlin.String
+import kotlin.Unit
+
+class DebtCounsellingStatusTwoActivity :
+    BaseActivity<ActivityDebtCounsellingStatusTwoBinding>(R.layout.activity_debt_counselling_status_two)
+    {
+  private val viewModel: DebtCounsellingStatusTwoVM by viewModels<DebtCounsellingStatusTwoVM>()
+
+  override fun onInitialized(): Unit {
+    viewModel.navArguments = intent.extras?.getBundle("bundle")
+    binding.debtCounsellingStatusTwoVM = viewModel
+  }
+
+  override fun setUpClicks(): Unit {
+  }
+
+  companion object {
+    const val TAG: String = "DEBT_COUNSELLING_STATUS_TWO_ACTIVITY"
+
+
+    fun getIntent(context: Context, bundle: Bundle?): Intent {
+      val destIntent = Intent(context, DebtCounsellingStatusTwoActivity::class.java)
+      destIntent.putExtra("bundle", bundle)
+      return destIntent
+    }
+  }
+}

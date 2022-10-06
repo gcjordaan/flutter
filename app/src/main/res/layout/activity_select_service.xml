@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="selectServiceVM" type="com.gideonsapplication.app.modules.selectservice.data.viewmodel.SelectServiceVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearSelectService"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_100">
+        <FrameLayout android:id="@+id/frameStacklogin"
+            android:layout_height="@dimen/_62pxv" android:layout_width="match_parent">
+            <TextView android:ellipsize="end" android:id="@+id/txtLOGIN"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_131pxh"
+                android:layout_marginStart="@dimen/_131pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{selectServiceVM.selectServiceModel.txtLOGIN}"
+                style="@style/txtPoppinssemibold15" tools:text="@string/lbl_login"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:contentInsetStart="0dp" style="@style/groupStylegray_100">
+                <LinearLayout android:id="@+id/linearRowmenu"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageMenu"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="@dimen/_25pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_menu"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_menu"/>
+                    <ImageView android:id="@+id/imageCroppedNBlogo"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_64pxh"
+                        android:layout_width="@dimen/_119pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_croppednblogo"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_croppednblogo"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLogout"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginStart="@dimen/_67pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.25"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{selectServiceVM.selectServiceModel.txtLogout}"
+                        style="@style/txtSourceSansProregular16" tools:text="@string/lbl_log_out"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_91pxh"
+            android:layout_marginStart="@dimen/_93pxh"
+            android:layout_marginTop="@dimen/_36pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{selectServiceVM.selectServiceModel.txtLanguage}"
+            style="@style/txtPoppinsregular13" tools:text="@string/msg_hi_monique_wha"/>
+        <FrameLayout android:id="@+id/frameStackconsultingone"
+            android:layout_height="@dimen/_133pxv"
+            android:layout_marginTop="@dimen/_57pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageConsultingOne"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_133pxh"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_width="@dimen/_390pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_consulting1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_consulting1"/>
+            <LinearLayout android:id="@+id/linearColumndescription"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_100_a5">
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{selectServiceVM.selectServiceModel.txtDescription}"
+                    style="@style/txtPoppinsregular13" tools:text="@string/msg_to_qualify_for"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumndebtconsolidat"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_800">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtDEBTCONSOLIDAT"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginEnd="@dimen/_94pxh"
+                android:layout_marginStart="@dimen/_94pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{selectServiceVM.selectServiceModel.txtDEBTCONSOLIDAT}"
+                style="@style/txtPoppinsbold18" tools:text="@string/msg_debt_consolidat"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStackconsolidationone"
+            android:layout_height="@dimen/_112pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageConsolidationOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_112pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_consolidation1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_consolidation1"/>
+            <LinearLayout android:id="@+id/linearColumnloremipsumdol"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_100_a5">
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtLoremipsumdol"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{selectServiceVM.selectServiceModel.txtLoremipsumdol}"
+                    style="@style/txtPoppinsregular13" tools:text="@string/msg_lorem_ipsum_dol"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnprice"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleindigo_901">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtPrice"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_103pxh"
+                android:layout_marginStart="@dimen/_103pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{selectServiceVM.selectServiceModel.txtPrice}"
+                style="@style/txtPoppinsbold18" tools:text="@string/msg_debt_counsellin"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStackcounsellingone"
+            android:layout_height="@dimen/_147pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageCounsellingOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_147pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_counselling1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_counselling1"/>
+            <LinearLayout android:id="@+id/linearColumnloremipsumdolOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_28pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_100_a5">
+                <TextView android:gravity="end"
+                    android:id="@+id/txtLoremipsumdolOne"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_4pxh"
+                    android:layout_marginStart="@dimen/_30pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{selectServiceVM.selectServiceModel.txtLoremipsumdolOne}"
+                    style="@style/txtPoppinsregular13" tools:text="@string/msg_lorem_ipsum_dol"/>
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnBookAConsultation"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_12pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_12pxv" android:singleLine="true"
+            android:text="@string/msg_book_a_consulta"
+            android:textAllCaps="false" style="@style/btnSolid_1" tools:text="@string/msg_book_a_consulta"/>
+    </LinearLayout>
+</layout>
