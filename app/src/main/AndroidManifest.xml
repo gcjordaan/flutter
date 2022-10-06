@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.gideonsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.gideonsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.gideonsapplication.app.modules.four.ui.FourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.consolidatemydebtstatus.ui.ConsolidateMyDebtStatusActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.b.ui.BActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.gideonsapplication.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gideonsapplication.app.modules.consolidatemydebtstatusone.ui.ConsolidateMyDebtStatusOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.mfaverification.ui.MfaVerificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.creditscore.ui.CreditScoreActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.consolidatemydebt.ui.ConsolidateMyDebtActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.debtcounsellingstatus.ui.DebtCounsellingStatusActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.debtcounsellingstatustwo.ui.DebtCounsellingStatusTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.consolidatemydebtupload.ui.ConsolidateMyDebtUploadActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.selectservice.ui.SelectServiceActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.consolidatemydebtstatustwo.ui.ConsolidateMyDebtStatusTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.selectdateforconsultanttocontactyou.ui.SelectDateForConsultantToContactYouActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.debtcounsellingstatusone.ui.DebtCounsellingStatusOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.uploadfilesfordebtcounselling.ui.UploadFilesForDebtCounsellingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.admindashboard.ui.AdminDashboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gideonsapplication.app.modules.signupfordebtcounselling.ui.SignUpForDebtCounsellingActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

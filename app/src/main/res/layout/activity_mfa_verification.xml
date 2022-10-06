@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="mfaVerificationVM" type="com.gideonsapplication.app.modules.mfaverification.data.viewmodel.MfaVerificationVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearMFAVerificatio"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_100">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackcroppednblogo"
+            android:layout_height="@dimen/_15pxv"
+            android:layout_width="match_parent" style="@style/groupStylegray_100">
+            <ImageView android:id="@+id/imageCroppedNBlogo"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_7pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_127pxh"
+                android:layout_marginStart="@dimen/_127pxh"
+                android:layout_width="@dimen/_119pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_croppednblogo"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_croppednblogo"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackwelcometoane"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_210pxv"
+            android:layout_marginStart="@dimen/_2pxh" android:layout_width="@dimen/_389pxh">
+            <ImageView android:id="@+id/imageHeaderImageOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_210pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_headerimage1_210x389}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_headerimage1_210x389"/>
+            <LinearLayout android:id="@+id/linearColumnwelcometoane"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_73pxh"
+                android:layout_marginStart="@dimen/_73pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtWelcometoaNe"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{mfaVerificationVM.mfaVerificationModel.txtWelcometoaNe}"
+                    style="@style/txtSourceSansProbold22" tools:text="@string/msg_welcome_to_a_ne"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtAbetterWayto"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_43pxh"
+                    android:layout_marginStart="@dimen/_43pxh"
+                    android:layout_marginTop="@dimen/_26pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{mfaVerificationVM.mfaVerificationModel.txtAbetterWayto}"
+                    style="@style/txtSourceSansProsemibold15" tools:text="@string/msg_a_better_way_to"/>
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:id="@+id/imageMail"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_63pxh"
+            android:layout_marginEnd="@dimen/_66pxh"
+            android:layout_marginStart="@dimen/_66pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="@dimen/_69pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_mail"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_mail"/>
+        <TextView android:gravity="start"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_66pxh"
+            android:layout_marginStart="@dimen/_66pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:text="@{mfaVerificationVM.mfaVerificationModel.txtDescription}"
+            style="@style/txtPoppinsregular13" tools:text="@string/msg_hi_fullname_sur"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnOtp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_77pxh"
+            android:layout_marginStart="@dimen/_77pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/lbl_otp" android:textAllCaps="false"
+            style="@style/btnSolidRounded_1" tools:text="@string/lbl_otp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnVerifyLogin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_76pxh"
+            android:layout_marginStart="@dimen/_76pxh"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_verify_login"
+            android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_verify_login"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescriptionOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginEnd="@dimen/_66pxh"
+            android:layout_marginStart="@dimen/_66pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="match_parent"
+            android:text="@{mfaVerificationVM.mfaVerificationModel.txtDescriptionOne}"
+            style="@style/txtPoppinsregular13" tools:text="@string/msg_hi_fullname_sur"/>
+    </LinearLayout>
+</layout>

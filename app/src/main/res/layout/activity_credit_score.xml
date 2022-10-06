@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="creditScoreVM" type="com.gideonsapplication.app.modules.creditscore.data.viewmodel.CreditScoreVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCreditscore"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_100">
+        <View android:background="@color/gray_100"
+            android:id="@+id/viewRectangle4191"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_13pxv" android:layout_width="@dimen/_391pxh"/>
+        <TextView android:gravity="start"
+            android:id="@+id/txtReflectscredit"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_marginTop="@dimen/_124pxv"
+            android:layout_width="match_parent"
+            android:text="@{creditScoreVM.creditScoreModel.txtReflectscredit}"
+            style="@style/txtPoppinssemibold18" tools:text="@string/msg_reflects_credit"/>
+        <ImageView android:id="@+id/imageUndrawhomescr"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_216pxh"
+            android:layout_marginEnd="@dimen/_61pxh"
+            android:layout_marginStart="@dimen/_61pxh"
+            android:layout_marginTop="@dimen/_66pxv"
+            android:layout_width="@dimen/_228pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_undrawhomescr"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_undrawhomescr"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSubmit"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_148pxh"
+            android:layout_marginStart="@dimen/_148pxh"
+            android:layout_marginTop="@dimen/_46pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{creditScoreVM.creditScoreModel.txtSubmit}"
+            style="@style/txtPoppinssemibold15" tools:text="@string/lbl_submit"/>
+    </LinearLayout>
+</layout>
